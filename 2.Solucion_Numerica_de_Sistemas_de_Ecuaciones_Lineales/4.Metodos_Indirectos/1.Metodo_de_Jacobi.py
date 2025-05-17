@@ -1,5 +1,11 @@
 import numpy as np
+'''
+Metodo de Jacobi:
+▶ Calcula cada nueva componente usando solo valores de la iteracion anterior.
+▶ Requiere matriz diagonalmente dominante o simetrica definida positiva.
+▶ Facil de paralelizar.
 
+'''
 def jacobi(A, b, x0=None, tol=1e-2, max_iter=30):
     n = len(A)
     x = np.zeros_like(b) if x0 is None else x0.copy()

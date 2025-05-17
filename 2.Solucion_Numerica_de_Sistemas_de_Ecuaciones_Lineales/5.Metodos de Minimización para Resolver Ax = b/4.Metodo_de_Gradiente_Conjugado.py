@@ -31,3 +31,14 @@ x0 = np.array([0.0, 0.0])
 
 sol = gradiente_conjugado(A, b, x0)
 print("Solución aproximada:", sol)
+
+'''
+Condiciones:
+- Solo se aplica para resolver sistemas lineales de la forma:
+    Ax=b
+    donde:
+        A es una matriz simétrica y definida positiva (SPD).
+- También se puede interpretar como minimización de una función cuadrática:
+   f(x) = ½x^TAx − b^Tx
+- Requiere menor memoria y converge en a lo sumo nn iteraciones (en aritmética exacta).
+'''

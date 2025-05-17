@@ -7,6 +7,8 @@ Pivoteo parcial: Intercambia filas de la matriz.
 Pivoteo completo: Intercambia filas y columnas.
 PA = LU
 si A permite eliminacion sin pivoteo (intercambio de filas) entonces P = I 
+
+LU: se aplica a cualquier matriz cuadrada (sin pivoteo en la teoria).
 '''
 A = np.array([[-2, 4, -1], [4, -5, 4],[-6,-3,-14]])
 P, L, U = lu(A)
@@ -35,3 +37,13 @@ def lu_factorization(A):
                 L[j][i] = (A[j][i] - suma) / U[i][i]
     
     return L, U
+
+
+'''
+import numpy as np
+from scipy.linalg import lu
+A = np.array([[2 , 3] , [4 , 7]])
+P , L , U = lu(A)
+print ( " L =\n " , L )
+print ( " U =\n " , U )
+'''

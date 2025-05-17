@@ -40,3 +40,15 @@ traj_cauchy, iters_cauchy = metodo_cauchy(A, b, x0)
 # Resultados
 print("Solución aproximada:", traj_cauchy)
 print("Valor mínimo de Q(x):", Q(traj_cauchy, A, b))
+
+'''
+Método de Cauchy (Descenso por Gradiente)
+
+Condiciones:
+- La función debe ser:
+    Diferenciable
+    Convexa (para garantizar convergencia al mínimo global)
+- Si la función es cuadrática: f(x) = ½x^TAx − b^Tx
+    A debe ser simétrica definida positiva.
+- Se requiere una búsqueda de línea para determinar la longitud del paso óptima en cada iteración.
+'''

@@ -1,3 +1,26 @@
+'''
+METODO DE LA BISECCION
+
+▶ Metodo numerico para encontrar raices de funciones continuas.
+▶ Basado en el Teorema del Valor Intermedio.
+▶ Se aplica en intervalos donde f (a)f (b) < 0. 
+
+Pasos del Metodo
+1. Verificar que f(a)f(b) < 0.
+2. Calcular el punto medio: c = (a+b)/2
+3. Evaluar f (c):
+   Si f(c) = 0, entonces c es la raiz.
+   Si f(a)f(c) < 0, actualizar b = c.
+   Si f(c)f(b) < 0, actualizar a = c.
+4. Repetir hasta que |b - a| < ε.
+
+Ventajas
+▶ Convergencia garantizada.
+▶ Sencillez del metodo.
+Desventajas
+▶ Convergencia lenta.
+▶ Requiere que f(a)f(b) < 0.
+'''
 def f(x):
     return x**3 - x**2 - x - 2
 

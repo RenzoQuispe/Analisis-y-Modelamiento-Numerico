@@ -1,0 +1,13 @@
+Aplicaciones
+▶ Los metodos de minimizacion permiten resolver sistemas grandes sin invertir matrices.
+▶ El metodo de gradientes conjugados es ideal para matrices simetricas y definidas positivas.
+▶ La eficiencia del Gradiente Conjugado lo hace util en simulaciones fısicas, FEM, y problemas de optimizacion.
+▶ El metodo de Gradiente Conjugado es eficiente y elegante para resolver problemas cuadraticos simetricos. 
+  Su estructura basada en ortogonalidad conjugada permite un progreso garantizado en cada iteracion.
+
+Comparacion de condiciones:
+Método	                 | Requiere diferenciabilidad | Necesita A simétrica definida positiva |  Convexidad   | Aplicación principal
+Descenso por Coordenadas |           Si               |	        No necesariamente              | Recomendado   |	Optimización
+Descenso Relajado (SOR)	 |           No               |       Sí o diagonal dominante	       |   No aplica   |  Sistemas lineales
+Descenso de Cauchy	     |           Sí               |         Sí (si cuadrática)	           |      Sí       |    Optimización
+Gradientes Conjugados	 |           Sí	              |           Obligatoriamente	           |      Sí	   |  Sistemas lineales (Ax = b)

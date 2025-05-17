@@ -1,3 +1,25 @@
+'''
+METODO DEL PUNTO FIJO
+
+Queremos resolver la ecuacion:
+x = g(x)
+Metodo del punto fijo:
+1. Reescribimos una ecuacion f(x) = 0 como x = g(x).
+2. Definimos la iteracion: xn+1 = g(xn).
+
+Criterio de Convergencia: 
+garantizada si:
+g(x) continua en [a,b]
+g(x) ∈ [a,b] para todo x ∈ [a,b]
+|g'(x)| ≤ k < 1 en [a,b]
+
+Conclusiones:
+▶ Si |g'(x)| < 1 en un entorno de x*, entonces la iteracion:
+xn+1 = g(xn)
+converge localmente a x*.
+▶ La convergencia es al menos lineal.
+▶ Este resultado es una consecuencia directa del Teorema del Punto Fijo de Banach.
+'''
 import numpy as np
 import matplotlib.pyplot as plt
 
