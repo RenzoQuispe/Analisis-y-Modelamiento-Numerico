@@ -25,7 +25,8 @@ import matplotlib.pyplot as plt
 
 # Definimos g(x) tal que x = g(x) tenga una solución
 def g(x):
-    return (x**2 + 2) / 3  # raíz de x^2 - 3x + 2 = 0
+    return -4 + 4*x - (x**2)/2
+    #return (x**2 + 2) / 3  # raíz de x^2 - 3x + 2 = 0
 
 def punto_fijo(g, x0, tol=1e-2, max_iter=50):
     errores = []
@@ -47,7 +48,7 @@ def punto_fijo(g, x0, tol=1e-2, max_iter=50):
     return iteraciones, errores
 
 # Ejecutar el método
-x0 = 0.8
+x0 = 3.8
 xs, errs = punto_fijo(g, x0)
 
 # Graficar convergencia del error

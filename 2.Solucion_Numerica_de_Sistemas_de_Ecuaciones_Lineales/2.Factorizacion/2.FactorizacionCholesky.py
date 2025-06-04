@@ -6,7 +6,7 @@ A = LL^T
 donde L es triangular inferior con entradas reales positivas en la
 diagonal. Más eficiente que LU en este caso.
 Para que exista la factorización de Cholesky:
-▶ A = AT (simetria)
+▶ A = A^T (simetria)
 ▶ x^T Ax > 0 para todo x != 0 (definida positiva). Tambien autovalores positivos o determinantes de principales mayores a cero
 '''
 A = np.array([[4, 2], [2, 3]])

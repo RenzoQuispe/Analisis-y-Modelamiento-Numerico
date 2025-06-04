@@ -22,9 +22,11 @@ Desventajas
 ▶ Requiere que f(a)f(b) < 0.
 '''
 def f(x):
-    return x**3 - x**2 - x - 2
+    e=2.71828
+    return e**x -(0.1+x**2)**-1
+    #return x**3 - x**2 - x - 2
 
-def biseccion(a, b, tol=1e-1, max_iter=100):
+def biseccion(a, b, tol=1e-3, max_iter=100):
     if f(a) * f(b) >= 0:
         print("La función no cumple con f(a) * f(b) < 0.")
         return None
@@ -51,5 +53,5 @@ def biseccion(a, b, tol=1e-1, max_iter=100):
     return c
 
 # Ejemplo de uso
-raiz_aprox = biseccion(0.4, 2.5)
+raiz_aprox = biseccion(0, 1)
 print(f"\nAproximación de la raíz: {raiz_aprox}")
